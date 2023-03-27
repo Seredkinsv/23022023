@@ -17,15 +17,13 @@ int max_num = numbera;
 
 // Сравнение входных чисел - так и не решил
 
-if(numberb > max_num)
+if(numberb > max_num) 
 {
-    Console.Write("max - второе число");
+    max_num = numberb;
     }
-if(numberc > numbera)
+if(numberc > max_num)
 {
-    Console.Write("max - третье число");
+    max_num = numberc;
 }
-else
-{
-    Console.WriteLine("первое число - мах");
-}
+
+    Console.WriteLine($"Наибольшее число - {max_num}");
